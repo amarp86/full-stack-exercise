@@ -2,6 +2,7 @@ import Layout from "../../components/shared/Layout/Layout";
 import { useState } from "react";
 import { createPost } from "../../services/postsAxios";
 import { useHistory } from "react-router-dom";
+import "./Add.css";
 
 const Add = (props) => {
   const history = useHistory();
@@ -32,6 +33,7 @@ const Add = (props) => {
       <div className="add-div">
         <form className="el-formo" onSubmit={handleSubmit}>
           <input
+            className="input-title"
             type="textarea"
             placeholder="Add-o Title-o Here-o"
             value={post.title}
@@ -39,6 +41,7 @@ const Add = (props) => {
             onChange={handleChange}
           />
           <textarea
+            className="input-content"
             type="text"
             placeholder="Add-o Content-o Here-o"
             value={post.content}
@@ -46,6 +49,7 @@ const Add = (props) => {
             onChange={handleChange}
           />
           <input
+            className="input-author"
             type="text"
             placeholder="Add-o Author-o Here-o"
             value={post.author}
@@ -53,13 +57,16 @@ const Add = (props) => {
             onChange={handleChange}
           />
           <input
+            className="input-image"
             type="text"
             placeholder="Add-o Image-Link-o Here-o"
             value={post.imgURL}
             name="imgURL"
             onChange={handleChange}
           />
-          <input type="submit" />
+          <button className="submit-button" type="submit">
+            Submit-o Post-o!
+          </button>
         </form>
       </div>
     </Layout>
