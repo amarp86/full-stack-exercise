@@ -1,4 +1,4 @@
-import { getPosts } from "../services/postsAxios.js";
+import { getPosts } from "../../services/postsAxios.js";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./Posts.css";

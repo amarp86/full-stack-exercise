@@ -1,6 +1,6 @@
 import React from "react";
-import Layout from "../components/shared/Layout";
-import Posts from "../components/Posts";
+import Layout from "../../components/shared/Layout/Layout";
+import Posts from "../../components/Posts/Posts";
 
 const Home = () => {
   return (
