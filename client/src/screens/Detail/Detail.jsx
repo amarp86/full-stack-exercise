@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import Layout from "../components/shared/Layout";
+import Layout from "../../components/shared/Layout/Layout";
 import { Link } from "react-router-dom";
-import { getPost } from "../services/postsAxios";
+import { getPost } from "../../services/postsAxios";
 
 function Detail(props) {
   const [posts, setPosts] = useState([]);
@@ -24,6 +24,9 @@ function Detail(props) {
         <div className="post-details-content">{posts.content}</div>
         <div className="post-details-author">{posts.author}</div>
       </div>
+      <Link to={`/edit/${id}`}>
+        <button>Edit This Post-o</button>
+      </Link>
     </Layout>
   );
 }
