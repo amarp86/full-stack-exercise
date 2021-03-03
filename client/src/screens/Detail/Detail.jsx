@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import Layout from "../../components/shared/Layout/Layout";
 import { Link } from "react-router-dom";
 import { getPost } from "../../services/postsAxios";
+import "./Detail.css"
 
 function Detail(props) {
   const [posts, setPosts] = useState([]);
