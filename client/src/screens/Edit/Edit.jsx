@@ -1,8 +1,8 @@
-import Layout from "../components/shared/Layout";
+import Layout from "../../components/shared/Layout/Layout";
 import { useState, useEffect } from "react";
-import { createPost } from "../services/postsAxios";
+
 import { useHistory, useParams } from "react-router-dom";
-import { getPost, updatePost } from "../services/postsAxios";
+import { getPost, updatePost } from "../../services/postsAxios";
 const Add = (props) => {
   const history = useHistory();
   let { id } = useParams();
@@ -47,7 +47,7 @@ const Add = (props) => {
             name="title"
             onChange={handleChange}
           />
-          <input
+          <textarea
             type="text"
             placeholder="Add-o Content-o Here-o"
             value={post.content}

@@ -1,9 +1,9 @@
 import "./App.css";
 import { Route, Switch } from "react-router-dom";
-import Home from "./screens/Home.jsx";
-import Detail from "./screens/Detail.jsx";
-import Add from "./screens/Add.jsx";
-import Edit from "./screens/Edit";
+import Home from "./screens/Home/Home.jsx";
+import Detail from "./screens/Detail/Detail.jsx";
+import Add from "./screens/Add/Add.jsx";
+import Edit from "./screens/Edit/Edit";
 
 function App() {
   return (
