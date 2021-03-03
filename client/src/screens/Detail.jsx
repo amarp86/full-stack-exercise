@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import Layout from "../components/shared/Layout";
-
+import { Link } from "react-router-dom";
 import { getPost } from "../services/postsAxios";
 
 function Detail(props) {
