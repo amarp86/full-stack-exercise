@@ -1,6 +1,6 @@
-import Layout from "../components/shared/Layout";
+import Layout from "../../components/shared/Layout/Layout";
 import { useState } from "react";
-import { createPost } from "../services/postsAxios";
+import { createPost } from "../../services/postsAxios";
 import { useHistory } from "react-router-dom";
 
 const Add = (props) => {
@@ -32,13 +32,13 @@ const Add = (props) => {
       <div className="add-div">
         <form className="el-formo" onSubmit={handleSubmit}>
           <input
-            type="text"
+            type="textarea"
             placeholder="Add-o Title-o Here-o"
             value={post.title}
             name="title"
             onChange={handleChange}
           />
-          <input
+          <textarea
             type="text"
             placeholder="Add-o Content-o Here-o"
             value={post.content}
