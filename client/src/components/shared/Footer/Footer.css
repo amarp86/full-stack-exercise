@@ -1,0 +1,20 @@
+.footer {
+  min-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #c2f8cb;
+}
+
+.team-title {
+  font-family: "Architects Daughter", cursive;
+  color: #8367c7;
+  margin: 10px auto;
+  font-size: 20pt;
+}
+
+.team-member-names {
+  font-family: "Architects Daughter", cursive;
+  color: #5603ad;
+  margin: 10px auto;
+  font-size: 12pt;
+}

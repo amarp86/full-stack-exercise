@@ -1,0 +1,45 @@
+.nav-div {
+  display: flex;
+  flex-direction: row;
+  background-color: #8367c7;
+}
+.nav-div a {
+  text-decoration: none;
+}
+
+.nav-title {
+  font-family: "Architects Daughter", cursive;
+  font-size: 30pt;
+  color: #b3e9c7;
+  padding: 10px 10px;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  padding: 10px 10px;
+  margin: 10px 10px;
+  position: absolute;
+  right: 10px;
+}
+
+.nav-link-home {
+  padding: 10px 10px;
+}
+.nav-link-home a {
+  color: #f0fff1;
+}
+.nav-link-home a:hover {
+  color: orange;
+}
+
+.nav-link-add {
+  padding: 10px 10px;
+}
+
+.nav-link-add a {
+  color: #f0fff1;
+}
+.nav-link-add a:hover {
+  color: orange;
+}
