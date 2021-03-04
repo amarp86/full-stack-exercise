@@ -20,6 +20,7 @@ function Posts(props) {
         <div key={index} className="individual-posts">
           <Link to={`/posts/${post._id}`}>
             <h2>{post.title}</h2>
+            <img src={post.imgURL} alt="post" />
           </Link>
         </div>
       ))}
