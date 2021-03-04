@@ -32,12 +32,14 @@ function Detail(props) {
         <img className="details-img" src={posts.imgURL} alt="post" />
         <div className="post-details-content">{posts.content}</div>
         <div className="post-details-author">{posts.author}</div>
-      </div>
-      <Link to={`/edit/${id}`}>
-        <button>Edit This Post-o</button>
+      
+      <Link className="left" to={`/edit/${id}`}>
+        <button className="linked-button">Edit This Post-o</button>
       </Link>
 
-      <button onClick={deleteMe}>Delete-o Me-o</button>
+          <button className="right" onClick={deleteMe}>Delete-o Me-o</button>
+        
+        </div>
     </Layout>
   );
 }
