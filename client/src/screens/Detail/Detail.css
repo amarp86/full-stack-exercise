@@ -10,8 +10,8 @@
 }
 
 .details-img {
-  width: 400px;
-  height: 400px;
+  width: 50%;
+  height: auto;
   grid-area: A;
   margin: 50px auto;
   border-radius: 20px;
