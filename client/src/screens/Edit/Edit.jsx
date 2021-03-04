@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 
 import { useHistory, useParams } from "react-router-dom";
 import { getPost, updatePost } from "../../services/postsAxios";
+import "./Edit.css";
 const Add = (props) => {
   const history = useHistory();
   let { id } = useParams();
@@ -41,6 +42,7 @@ const Add = (props) => {
       <div className="add-div">
         <form className="el-formo" onSubmit={handleSubmit}>
           <input
+            className="input-title"
             type="text"
             placeholder="Add-o Title-o Here-o"
             value={post.title}
@@ -48,6 +50,7 @@ const Add = (props) => {
             onChange={handleChange}
           />
           <textarea
+            className="input-content"
             type="text"
             placeholder="Add-o Content-o Here-o"
             value={post.content}
@@ -55,6 +58,7 @@ const Add = (props) => {
             onChange={handleChange}
           />
           <input
+            className="input-author"
             type="text"
             placeholder="Add-o Author-o Here-o"
             value={post.author}
@@ -62,13 +66,14 @@ const Add = (props) => {
             onChange={handleChange}
           />
           <input
+            className="input-image"
             type="text"
             placeholder="Add-o Image-Link-o Here-o"
             value={post.imgURL}
             name="imgURL"
             onChange={handleChange}
           />
-          <input type="submit" />
+          <button className="submit-button">Edit-o!</button>
         </form>
       </div>
     </Layout>
