@@ -1,13 +1,16 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useHistory } from "react-router-dom";
 import Layout from "../../components/shared/Layout/Layout";
 import { Link } from "react-router-dom";
-import { getPost } from "../../services/postsAxios";
-import "./Detail.css"
+import { getPost, deletePost } from "../../services/postsAxios";
+import "./Detail.css";
 
 function Detail(props) {
   const [posts, setPosts] = useState([]);
+  const history = useHistory();
+  console.log(props);
   const { id } = useParams();
+
   useEffect(() => {
     const getAllPosts = async () => {
       const allPosts = await getPost(id);
@@ -16,6 +19,11 @@ function Detail(props) {
     };
     getAllPosts();
   }, [id]);
+
+  const deleteMe = async () => {
+    await deletePost(posts._id);
+    history.push("/");
+  };
 
   return (
     <Layout>
@@ -28,6 +36,8 @@ function Detail(props) {
       <Link to={`/edit/${id}`}>
         <button>Edit This Post-o</button>
       </Link>
+
+      <button onClick={deleteMe}>Delete-o Me-o</button>
     </Layout>
   );
 }
