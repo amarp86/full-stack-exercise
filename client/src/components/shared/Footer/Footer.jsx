@@ -1,8 +1,9 @@
+import "./Footer.css";
 function Footer(props) {
   return (
     <div className="footer">
-      <p>This Is Our Footer</p>
-      <p>Hanna-o, Jason-o, Amar-o</p>
+      <div className="team-title">Team Awesome Sauce</div>
+      <div className="team-member-names">Hanna-o, Jason-o, Amar-o</div>
     </div>
   );
 }

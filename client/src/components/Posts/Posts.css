@@ -1,4 +1,18 @@
 .individual-posts a {
   text-decoration: none;
-  color: purple;
+  color: #5603ad;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+}
+
+.all-posts {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.all-posts:hover {
+  text-shadow: 0 0 10px rgb(255, 157, 250), 0 0 20px rgb(248, 79, 240),
+    0 0 30px #6200ff, 0 0 40px #3f0461, 0 0 50px #b459ff, 0 0 60px #b459ff,
+    0 0 70px #e600b8;
 }
