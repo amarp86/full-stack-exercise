@@ -19,8 +19,8 @@ function Posts(props) {
       {posts.map((post, index) => (
         <div key={index} className="individual-posts">
           <Link to={`/posts/${post._id}`}>
-            <h2>{post.title}</h2>
-            <img src={post.imgURL} alt="post" />
+            <h2 className="title">{post.title}</h2>
+            <img className ="individual-img"src={post.imgURL} alt="post" />
           </Link>
         </div>
       ))}

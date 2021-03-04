@@ -1,8 +1,81 @@
 .detail-div {
   background-color: #c2f8cb;
-  display: flex;
+  display: grid;
+  grid-template-areas:
+    "H H H H  "
+    "L A A R "
+    "L W W R "
+    "L F F R "
+    "L BL BR R";
 }
 
 .details-img {
-  width: 300px;
+  width: 400px;
+  height: 400px;
+  grid-area: A;
+  margin: 50px auto;
+  border-radius: 20px;
+}
+
+.post-details-content {
+  grid-area: F;
+  max-width: 70vw;
+  font-family: "Architects Daughter", cursive;
+  font-size: 24px;
+  margin: 0 auto;
+  color: blueviolet;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.post-details-title {
+  grid-area: H;
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+  font-family: "Architects Daughter";
+  color: blueviolet;
+  margin-top: 20px;
+}
+
+.post-details-author {
+  grid-area: W;
+  text-align: center;
+  font-family: "Architects Daughter", cursive;
+  margin-bottom: 30px;
+  color: blueviolet;
+  font-size: 20px;
+}
+
+.right {
+  grid-area: BR;
+  width: 150px;
+  background-color: #8367c7;
+  color: white;
+  font-size: 20px;
+  border-radius: 10px;
+  margin: 0 auto;
+  margin-bottom: 70px;
+}
+
+.left {
+  grid-area: BL;
+  margin: 0 auto;
+  margin-bottom: 70px;
+}
+
+.linked-button {
+  padding: 6px;
+  background-color: #8367c7;
+  color: white;
+  font-size: 20px;
+  border-radius: 10px;
+}
+
+.linked-button:hover,
+.right:hover {
+  color: #c2f8cb;
+  box-shadow: 0 0 10px rgb(255, 157, 250), 0 0 20px rgb(248, 79, 240),
+    0 0 30px #6200ff, 0 0 40px #3f0461, 0 0 50px #b459ff, 0 0 60px #b459ff,
+    0 0 70px #e600b8;
 }
