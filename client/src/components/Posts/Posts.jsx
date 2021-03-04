@@ -5,10 +5,10 @@ import "./Posts.css";
 
 function Posts(props) {
   const [posts, setPosts] = useState([]);
+
   useEffect(() => {
     const getAllPosts = async () => {
       const allPosts = await getPosts();
-
       setPosts(allPosts);
     };
     getAllPosts();
